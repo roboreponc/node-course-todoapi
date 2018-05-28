@@ -21,7 +21,7 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', (err, client) => {
 
      // Create a new 'Users' collection
      // db.collection('Users').insertOne({
-     //   name: 'Bolser',
+     //   name: 'RoBo',
      //   age: 34,
      //   location: 'Raleigh'
      // }, (err, result) => {
