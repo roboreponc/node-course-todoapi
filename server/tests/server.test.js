@@ -142,19 +142,6 @@ describe('DELETE /todos/:id', () => {
   });
 });
 
-// first test
-// grab id of first item
-// update text, set completed true
-// assert 200 back
-// custom assertion text is changed, completed is true, completedAt is a number .toBeA
-
-// second test
-// grab id of second item
-// update text, set completed to false
-// 200
-// text is changed, completed false, completedAt is null .toNotExist
-
-
 describe('PATCH /todos/:id', () => {
   it('should update the todo', (done) => {
     let id = todos[0]._id.toHexString();
@@ -173,7 +160,7 @@ describe('PATCH /todos/:id', () => {
       expect(res.body.todo.completed).toBe(true)
       expect(res.body.todo.completedAt).toBeA('number')
     })
-   .end(done);
+    .end(done);
   });
 
   it('should clear completedAt when todo is not completed', (done) => {
@@ -193,7 +180,7 @@ describe('PATCH /todos/:id', () => {
       expect(res.body.todo.completed).toBe(false)
       expect(res.body.todo.completedAt).toNotExist()
     })
-   .end(done);
+    .end(done);
   });
 
 });
