@@ -1,3 +1,4 @@
 node_modules/
 notes.txt
 server/server_original.js
+server/config/config.json
