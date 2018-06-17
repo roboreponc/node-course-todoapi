@@ -139,9 +139,6 @@ app.delete('/users/me/token', authenticate, (req, res) => {
   })
 });
 
-
-
-
 app.listen(port, () => {
   console.log(`Started up on port ${port}`);
 });
